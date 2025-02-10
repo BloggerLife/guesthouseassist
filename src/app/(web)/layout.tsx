@@ -8,7 +8,10 @@ import ThemeProvider from "@/components/ThemeProvider/ThemeProvider";
 import { NextAuthProvider } from "@/components/AuthProvider/AuthProvider";
 import Toast from "@/components/Toast/Toast";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Guest House Assist",
