@@ -2,12 +2,11 @@ import Image from 'next/image';
 
 export const heading1 = (
   <>
-    <h1 className='font-heading mb-6'>Explore Our Exquisite Hotel</h1>
+    <h1 className='font-heading mb-6'>Explore Our Exquisite BnBs</h1>
     <p className='text-[#4a4a4a] dark:text-[#ffffffea] mb-12 max-w-lg'>
-      Experience an Exquisite Hotel Immersed in Rich History and Timeless
-      Elegance.
+    Guest House Assist | Your BnB plug for all your vacation rentals, cabins, houses, & more
     </p>
-    <button className='btn-primary'>Get Started</button>
+    <button className='btn-primary'>Properties</button>
   </>
 );
 
