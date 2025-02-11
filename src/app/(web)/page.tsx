@@ -5,6 +5,8 @@ import NewsLetter from "@/components/NewsLetter/NewsLetter";
 import PageSearch from "@/components/PageSearch/PageSearch";
 import { getFeaturedRoom } from "@/libs/apis";
 import Link from "next/link";
+import Rooms from "@/components/Rooms/Rooms";
+import { BsArrowDownCircleFill } from "react-icons/bs";
 
 const Home = async () => {
   const featuredRoom = await getFeaturedRoom();
@@ -14,11 +16,17 @@ const Home = async () => {
       <HeroSection />
       <PageSearch />
       <FeaturedRoom featuredRoom={featuredRoom} />
-      <div className="flex px-4 items-center gap-12 container mx-auto">
-        <Link href="/rooms">
-          <button className="btn-primary">Show More Properties</button>
-        </Link>
-      </div>
+      <Rooms />
+      <Link href="/rooms">
+        <div className="flex justify-center items-center h-full">
+          <p className="font-bold lg:text-xl text-tertiary-dark">
+            Show More Properties
+          </p>
+        </div>
+        <div className="flex justify-center items-center h-full">
+          <BsArrowDownCircleFill className="text-tertiary-dark " />
+        </div>
+      </Link>
       <Gallery />
       <NewsLetter />
     </>
