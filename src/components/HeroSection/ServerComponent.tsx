@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const heading1 = (
   <>
@@ -7,7 +8,9 @@ export const heading1 = (
       Guest House Assist | Your BnB plug for all your vacation rentals, cabins,
       houses, & more
     </p>
-    <button className="btn-primary">View Properties</button>
+    <Link href="/rooms">
+      <button className="btn-primary">View Properties</button>
+    </Link>
   </>
 );
 
