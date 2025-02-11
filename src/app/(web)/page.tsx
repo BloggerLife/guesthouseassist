@@ -15,6 +15,7 @@ const Home = async () => {
     <>
       <HeroSection />
       <PageSearch />
+      <h3 className="font-heading mt-6 pl-4">Featured Property</h3>
       <FeaturedRoom featuredRoom={featuredRoom} />
       <Rooms />
       <Link href="/rooms">
