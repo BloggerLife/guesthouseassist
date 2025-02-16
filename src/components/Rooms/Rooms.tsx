@@ -60,7 +60,7 @@ const Rooms = () => {
   return (
     <div className="container mx-auto border-t-2">
       <div className="flex mt-10 justify-between flex-wrap">
-        {filteredRooms.map((room) => (
+        {filteredRooms.slice(0, 10).map((room) => (
           <RoomCard key={room._id} room={room} />
         ))}
       </div>
