@@ -37,19 +37,19 @@ const Search: FC<Props> = ({
           <label className="block text-sm font-medium mb-2 text-black">
             Property Type
           </label>
-          <div className="relative">
-            <select
-              value={roomTypeFilter}
-              onChange={handleRoomTypeChange}
-              className="w-full px-4 py-3 capitalize rounded leading-tight dark:bg-black focus:outline-none"
-            >
-              <option value="All">All</option>
-              <option value="one">1 Bed</option>
-              <option value="two">2 Beds</option>
-              <option value="three">3 Beds</option>
-              <option value="four">4,5&6 Beds</option>
-            </select>
-          </div>
+          {/* <div className="relative"> */}
+          <select
+            value={roomTypeFilter}
+            onChange={handleRoomTypeChange}
+            className="w-full px-4 py-3 capitalize rounded leading-tight dark:bg-black focus:outline-none"
+          >
+            <option value="All">All</option>
+            <option value="one">1 Bed</option>
+            <option value="two">2 Beds</option>
+            <option value="three">3 Beds</option>
+            <option value="four">4,5&6 Beds</option>
+          </select>
+          {/* </div> */}
         </div>
 
         <div className="w-full md:1/3 lg:w-auto mb-4 md:mb-0">
